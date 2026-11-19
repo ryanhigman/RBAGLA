@@ -206,12 +206,15 @@ footer { color: var(--muted); font-size: 14px; padding: 0 4px; display: flex; ju
       <button type="button" class="primary" id="btn-download">Download signed PDF</button>
     </div>
     <div class="confirm" id="rsuite-steps" hidden>
-      <h3>To attach it in rSuite Cloud</h3>
-      <ol style="margin:0;padding-left:22px">
-        <li>Open the Files app and go to Downloads.</li>
-        <li>Press and hold the PDF, then tap Share.</li>
-        <li>Choose rSuite Cloud.</li>
+      <h3>Next: attach it in rSuite Cloud</h3>
+      <ol style="margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px">
+        <li>If Safari asks, tap Download. The PDF is saved to the Files app, in Downloads.</li>
+        <li>In rSuite Cloud, open this customer's contract to step 4, <strong>Agreement Docs</strong>, and leave that screen open.</li>
+        <li>Open the Files app, go to Downloads, and find the PDF.</li>
+        <li>Press and hold the PDF, tap Share, then choose <strong>rSuite</strong>.</li>
+        <li>Back in rSuite Cloud, the addendum shows up in the Agreement Documents list as another document.</li>
       </ol>
+      <p class="note">The Agreement Docs screen has to be open before you send the PDF, or it will not attach to the contract.</p>
     </div>
     <div class="confirm" id="email-confirm" hidden>
       <p>The signed PDF goes to <span class="addr">sales@rbagla.com</span>, with copies to the sales rep and the customer. It is sent from the mail app on this device.</p>
@@ -244,7 +247,7 @@ footer { color: var(--muted); font-size: 14px; padding: 0 4px; display: flex; ju
       </div>
     </div>
     <div id="status" class="msg ok" role="status" hidden></div>
-    <p class="note">Download saves the signed PDF to the Files app on this device. Email hands it to the mail app on this device.</p>
+    <p class="note">Download saves the signed PDF to the Files app on this device, and then shows how to attach it in rSuite Cloud. Email hands the PDF to the mail app on this device.</p>
   </section>
 
   <footer>
